@@ -1,0 +1,16 @@
+# --- JAVA (IntelliJ / Maven) ---
+**/target/
+**/.idea/
+**/*.iml
+**/out/
+
+# --- PYTHON (VS Code) ---
+**/__pycache__/
+**/.venv/
+**/venv/
+**/.vscode/
+*.pyc
+
+# --- BAZA DE DATE & LOGS ---
+*.log
+**/h2_db/

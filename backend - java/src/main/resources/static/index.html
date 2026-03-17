@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommandations wit ML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Personal Recommandations</h1>
+    </header>
+
+    <div class="search-section">
+        <label for="customerId">Client ID:</label>
+        <input type="number" id="customerId" placeholder="ex: 17850">
+        <button id="btnSearch">See Recomandations</button>
+    </div>
+
+    <div class="demo-clients">
+        <p>Încearcă un client din baza de date:</p>
+        <button type="button" class="btn-demo" onclick="setDemoClient(17850)"> Loyal Customer (17850)</button>
+        <button type="button" class="btn-demo" onclick="setDemoClient(13047)"> Ocasional Customer (13047)</button>
+        <button type="button" class="btn-demo" onclick="setDemoClient(12583)"> VIP (12583)</button>
+    </div>
+
+    <div id="loading" class="hidden">Please wait...</div>
+
+    <div class="products-grid" id="productsGrid">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
