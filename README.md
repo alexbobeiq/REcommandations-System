@@ -3,6 +3,7 @@
 A full-stack microservices application that provides real-time, personalized product recommendations based on customer purchase history. 
 
 **Live Demo:** https://recommandations-system.onrender.com/
+Being hosted on a free deployment platform, it can take some time until the services are starting after a spin down
 
 ## About The Project
 
