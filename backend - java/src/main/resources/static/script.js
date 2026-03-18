@@ -14,7 +14,7 @@ async function loadRecommandations() {
     loading.classList.remove('hidden');
 
     try {
-        const url = `https://recommandations-system-1.onrender.com/store/recommandations/${customerId}`;
+        const url = `https://recommandations-system.onrender.com/store/recommandations/${customerId}`;
         const response = await fetch(url);
 
         if (!response.ok) throw new Error("Server not responding");
@@ -48,5 +48,5 @@ async function loadRecommandations() {
 
 function setDemoClient(id) {
     document.getElementById('customerId').value = id;
-    incarcaRecomandari();
+    loadRecommandations();
 }
