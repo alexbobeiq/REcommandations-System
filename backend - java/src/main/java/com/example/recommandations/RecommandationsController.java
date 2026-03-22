@@ -13,7 +13,6 @@ public class RecommandationsController {
     private static final Logger log = LoggerFactory.getLogger(RecommandationsController.class);
     private final RecommandationsService recommandationsService;
 
-    // CONSTRUCTORUL MANUAL
     public RecommandationsController(RecommandationsService recommandationsService) {
         this.recommandationsService = recommandationsService;
     }
