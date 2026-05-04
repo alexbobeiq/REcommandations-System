@@ -10,16 +10,16 @@ import lombok.Getter;
 @Entity
 @Table(name="Products")
 public class Product {
-    // GETTERI SI SETTERI (pe care Lombok trebuia sa ii faca)
+
     @Id
     private String code;
     private String name;
     private Double price;
 
-    // CONSTRUCTOR GOL (pentru Hibernate)
+
     public Product() {}
 
-    // CONSTRUCTOR CU PARAMETRI (pentru tine în CommandLineRunner)
+
     public Product(String code, String name, Double price) {
         this.code = code;
         this.name = name;
